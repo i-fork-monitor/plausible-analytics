@@ -14,7 +14,7 @@
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-K7URE6B4.js"></script>
-    <script src="dist/sidebar_items-B3F792EA.js"></script>
+    <script src="dist/sidebar_items-1F7B6DE6.js"></script>
     <script src="docs_config.js"></script>
     <script async src="dist/html-PVRIOB7F.js"></script>
 
@@ -157,6 +157,26 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
+        <a href="#accordion_item/1" data-no-tooltip translate="no">accordion_item(assigns)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">id</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">title</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">open_by_default</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">title_class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#accordion_menu/1" data-no-tooltip translate="no">accordion_menu(assigns)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
         <a href="#button/1" data-no-tooltip translate="no">button(assigns)</a>
 
       </div>
@@ -181,7 +201,37 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;, &quot;disabled&quot;]</code>.</li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">icon</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">:trash</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;, &quot;disabled&quot;]</code>.</li></ul></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#disclosure/1" data-no-tooltip translate="no">disclosure(assigns)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#disclosure_button/1" data-no-tooltip translate="no">disclosure_button(assigns)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">class</code> (<code class="inline">:any</code>) - Defaults to <code class="inline">nil</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#disclosure_panel/1" data-no-tooltip translate="no">disclosure_panel(assigns)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
 
     </div>
 
@@ -191,7 +241,7 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">slug</code> (<code class="inline">:string</code>) (required)</li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">slug</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li></ul></div>
 
     </div>
 
@@ -201,7 +251,7 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">button</code> (required) - Accepts attributes:<ul><li><code class="inline">class</code> (<code class="inline">:string</code>)</li></ul></li><li><code class="inline">menu</code> (required) - Accepts attributes:<ul><li><code class="inline">class</code> (<code class="inline">:string</code>)</li></ul></li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">id</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">button</code> (required) - Accepts attributes:<ul><li><code class="inline">class</code> (<code class="inline">:string</code>)</li></ul></li><li><code class="inline">menu</code> (required) - Accepts attributes:<ul><li><code class="inline">class</code> (<code class="inline">:string</code>)</li></ul></li></ul></div>
 
     </div>
 
@@ -219,7 +269,7 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">href</code> (<code class="inline">:string</code>)</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">new_tab</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">disabled</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;]</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">href</code> (<code class="inline">:string</code>)</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">id</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">new_tab</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">disabled</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;]</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
 
     </div>
 
@@ -239,7 +289,7 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;, &quot;disabled&quot;]</code>.</li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">icon</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">:pencil_square</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;, &quot;disabled&quot;]</code>.</li></ul></div>
 
     </div>
 
@@ -259,7 +309,7 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li>Global attributes are accepted.</li></ul><h2>Slots</h2><ul><li><code class="inline">title</code></li><li><code class="inline">subtitle</code></li><li><code class="inline">inner_block</code> (required)</li><li><code class="inline">footer</code></li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">padding?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">true</code>.</li><li>Global attributes are accepted.</li></ul><h2>Slots</h2><ul><li><code class="inline">title</code></li><li><code class="inline">subtitle</code></li><li><code class="inline">inner_block</code> (required)</li><li><code class="inline">footer</code></li></ul></div>
 
     </div>
 
@@ -317,7 +367,7 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;#&quot;</code>.</li><li><code class="inline">new_tab</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">method</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;get&quot;</code>.</li><li>Global attributes are accepted.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code></li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;#&quot;</code>.</li><li><code class="inline">new_tab</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">method</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;get&quot;</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;patch&quot;]</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code></li></ul></div>
 
     </div>
 
@@ -337,7 +387,7 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">truncate</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">max_width</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">height</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">actions</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">hide_on_mobile</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">nil</code>.</li><li>Global attributes are accepted.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">truncate</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">max_width</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">height</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">actions</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">hide_on_mobile</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">nil</code>.</li><li>Global attributes are accepted.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li></ul></div>
 
     </div>
 
@@ -357,7 +407,7 @@ Pages
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">docs</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">feature_mod</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">site</code> (<code class="inline">:any</code>)</li><li><code class="inline">conn</code> (<code class="inline">:any</code>)</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li><li><code class="inline">title</code> (required)</li><li><code class="inline">subtitle</code> (required)</li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">docs</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">feature_mod</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">feature_toggle?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">current_role</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">current_team</code> (<code class="inline">:any</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">site</code> (<code class="inline">:any</code>)</li><li><code class="inline">conn</code> (<code class="inline">:any</code>)</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li><li><code class="inline">title</code> (required)</li><li><code class="inline">subtitle</code> (required)</li></ul></div>
 
     </div>
 
@@ -383,11 +433,21 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
+        <a href="#toggle_switch/1" data-no-tooltip translate="no">toggle_switch(assigns)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">id</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">js_active_var</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">id_suffix</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">disabled</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li>Global attributes are accepted.</li></ul></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
         <a href="#tooltip/1" data-no-tooltip translate="no">tooltip(assigns)</a>
 
       </div>
 
-        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">sticky?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">true</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li><li><code class="inline">tooltip_content</code> (required)</li></ul></div>
+        <div class="summary-synopsis"><h2>Attributes</h2><ul><li><code class="inline">sticky?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">true</code>.</li><li><code class="inline">enabled?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">true</code>.</li></ul><h2>Slots</h2><ul><li><code class="inline">inner_block</code> (required)</li><li><code class="inline">tooltip_content</code> (required)</li></ul></div>
 
     </div>
 
@@ -414,6 +474,64 @@ Pages
       <span class="text">Functions</span>
     </h1>
     <div class="functions-list">
+<section class="detail" id="accordion_item/1">
+
+  <div class="detail-header">
+    <a href="#accordion_item/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">accordion_item(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L558" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<h2 id="accordion_item/1-attributes" class="section-heading">
+  <a href="#accordion_item/1-attributes" class="hover-link">
+    <i class="ri-link-m" aria-hidden="true"></i>
+  </a>
+  <span class="text">Attributes</span>
+</h2>
+<ul><li><code class="inline">id</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">title</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">open_by_default</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">title_class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li></ul><h2 id="accordion_item/1-slots" class="section-heading">
+  <a href="#accordion_item/1-slots" class="hover-link">
+    <i class="ri-link-m" aria-hidden="true"></i>
+  </a>
+  <span class="text">Slots</span>
+</h2>
+<ul><li><code class="inline">inner_block</code> (required)</li></ul>
+  </section>
+</section>
+<section class="detail" id="accordion_menu/1">
+
+  <div class="detail-header">
+    <a href="#accordion_menu/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">accordion_menu(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L544" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<h2 id="accordion_menu/1-slots" class="section-heading">
+  <a href="#accordion_menu/1-slots" class="hover-link">
+    <i class="ri-link-m" aria-hidden="true"></i>
+  </a>
+  <span class="text">Slots</span>
+</h2>
+<ul><li><code class="inline">inner_block</code> (required)</li></ul>
+  </section>
+</section>
 <section class="detail" id="button/1">
 
   <div class="detail-header">
@@ -486,7 +604,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">delete_button(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L699" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L836" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -501,7 +619,91 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;, &quot;disabled&quot;]</code>.</li></ul>
+<ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">icon</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">:trash</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;, &quot;disabled&quot;]</code>.</li></ul>
+  </section>
+</section>
+<section class="detail" id="disclosure/1">
+
+  <div class="detail-header">
+    <a href="#disclosure/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">disclosure(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L929" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<h2 id="disclosure/1-slots" class="section-heading">
+  <a href="#disclosure/1-slots" class="hover-link">
+    <i class="ri-link-m" aria-hidden="true"></i>
+  </a>
+  <span class="text">Slots</span>
+</h2>
+<ul><li><code class="inline">inner_block</code> (required)</li></ul>
+  </section>
+</section>
+<section class="detail" id="disclosure_button/1">
+
+  <div class="detail-header">
+    <a href="#disclosure_button/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">disclosure_button(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L940" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<h2 id="disclosure_button/1-attributes" class="section-heading">
+  <a href="#disclosure_button/1-attributes" class="hover-link">
+    <i class="ri-link-m" aria-hidden="true"></i>
+  </a>
+  <span class="text">Attributes</span>
+</h2>
+<ul><li><code class="inline">class</code> (<code class="inline">:any</code>) - Defaults to <code class="inline">nil</code>.</li></ul><h2 id="disclosure_button/1-slots" class="section-heading">
+  <a href="#disclosure_button/1-slots" class="hover-link">
+    <i class="ri-link-m" aria-hidden="true"></i>
+  </a>
+  <span class="text">Slots</span>
+</h2>
+<ul><li><code class="inline">inner_block</code> (required)</li></ul>
+  </section>
+</section>
+<section class="detail" id="disclosure_panel/1">
+
+  <div class="detail-header">
+    <a href="#disclosure_panel/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">disclosure_panel(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L959" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<h2 id="disclosure_panel/1-slots" class="section-heading">
+  <a href="#disclosure_panel/1-slots" class="hover-link">
+    <i class="ri-link-m" aria-hidden="true"></i>
+  </a>
+  <span class="text">Slots</span>
+</h2>
+<ul><li><code class="inline">inner_block</code> (required)</li></ul>
   </section>
 </section>
 <section class="detail" id="docs_info/1">
@@ -512,7 +714,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">docs_info(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L136" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L137" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -527,7 +729,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">slug</code> (<code class="inline">:string</code>) (required)</li></ul>
+<ul><li><code class="inline">slug</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li></ul>
   </section>
 </section>
 <section class="detail" id="dropdown/1">
@@ -538,7 +740,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">dropdown(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L234" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L239" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -553,7 +755,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li></ul><h2 id="dropdown/1-slots" class="section-heading">
+<ul><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">id</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li></ul><h2 id="dropdown/1-slots" class="section-heading">
   <a href="#dropdown/1-slots" class="hover-link">
     <i class="ri-link-m" aria-hidden="true"></i>
   </a>
@@ -570,7 +772,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">dropdown_divider(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L311" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L324" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -590,7 +792,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">dropdown_item(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L277" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L289" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -605,7 +807,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">href</code> (<code class="inline">:string</code>)</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">new_tab</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">disabled</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;]</code>.</li></ul><h2 id="dropdown_item/1-slots" class="section-heading">
+<ul><li><code class="inline">href</code> (<code class="inline">:string</code>)</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">id</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">new_tab</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">disabled</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;]</code>.</li></ul><h2 id="dropdown_item/1-slots" class="section-heading">
   <a href="#dropdown_item/1-slots" class="hover-link">
     <i class="ri-link-m" aria-hidden="true"></i>
   </a>
@@ -622,7 +824,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">dynamic_icon(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L479" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L605" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -648,7 +850,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">edit_button(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L680" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L810" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -663,7 +865,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;, &quot;disabled&quot;]</code>.</li></ul>
+<ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">icon</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">:pencil_square</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;method&quot;, &quot;disabled&quot;]</code>.</li></ul>
   </section>
 </section>
 <section class="detail" id="filter_bar/1">
@@ -674,7 +876,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">filter_bar(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L720" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L863" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -706,7 +908,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">focus_box(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L516" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L643" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -721,7 +923,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li>Global attributes are accepted.</li></ul><h2 id="focus_box/1-slots" class="section-heading">
+<ul><li><code class="inline">padding?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">true</code>.</li><li>Global attributes are accepted.</li></ul><h2 id="focus_box/1-slots" class="section-heading">
   <a href="#focus_box/1-slots" class="hover-link">
     <i class="ri-link-m" aria-hidden="true"></i>
   </a>
@@ -738,7 +940,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">focus_list(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L500" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L626" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -764,7 +966,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">h2(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L755" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L906" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -796,7 +998,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">notice(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L151" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L155" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -828,7 +1030,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">settings_tiles(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L389" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L436" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -848,7 +1050,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">spinner(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L368" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L381" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -874,7 +1076,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">styled_link(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L210" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L214" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -889,7 +1091,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;#&quot;</code>.</li><li><code class="inline">new_tab</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">method</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;get&quot;</code>.</li><li>Global attributes are accepted.</li></ul><h2 id="styled_link/1-slots" class="section-heading">
+<ul><li><code class="inline">href</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;#&quot;</code>.</li><li><code class="inline">new_tab</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">method</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;get&quot;</code>.</li><li>Global attributes are accepted. Supports all globals plus: <code class="inline">[&quot;patch&quot;]</code>.</li></ul><h2 id="styled_link/1-slots" class="section-heading">
   <a href="#styled_link/1-slots" class="hover-link">
     <i class="ri-link-m" aria-hidden="true"></i>
   </a>
@@ -906,7 +1108,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">table(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L560" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L687" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -938,7 +1140,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">td(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L586" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L714" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -953,7 +1155,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">truncate</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">max_width</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">height</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">actions</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">hide_on_mobile</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">nil</code>.</li><li>Global attributes are accepted.</li></ul><h2 id="td/1-slots" class="section-heading">
+<ul><li><code class="inline">truncate</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">max_width</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">height</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">class</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">actions</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">hide_on_mobile</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">nil</code>.</li><li>Global attributes are accepted.</li></ul><h2 id="td/1-slots" class="section-heading">
   <a href="#td/1-slots" class="hover-link">
     <i class="ri-link-m" aria-hidden="true"></i>
   </a>
@@ -970,7 +1172,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">th(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L622" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L751" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -1002,7 +1204,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">tile(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L405" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L455" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -1017,7 +1219,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">docs</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">feature_mod</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">site</code> (<code class="inline">:any</code>)</li><li><code class="inline">conn</code> (<code class="inline">:any</code>)</li></ul><h2 id="tile/1-slots" class="section-heading">
+<ul><li><code class="inline">docs</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">feature_mod</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">feature_toggle?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li><code class="inline">current_role</code> (<code class="inline">:atom</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">current_team</code> (<code class="inline">:any</code>) - Defaults to <code class="inline">nil</code>.</li><li><code class="inline">site</code> (<code class="inline">:any</code>)</li><li><code class="inline">conn</code> (<code class="inline">:any</code>)</li></ul><h2 id="tile/1-slots" class="section-heading">
   <a href="#tile/1-slots" class="hover-link">
     <i class="ri-link-m" aria-hidden="true"></i>
   </a>
@@ -1034,7 +1236,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">title(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L766" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L917" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -1066,7 +1268,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">toggle_submit(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L643" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L772" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -1090,6 +1292,32 @@ Pages
 <ul><li><code class="inline">inner_block</code> (required)</li></ul>
   </section>
 </section>
+<section class="detail" id="toggle_switch/1">
+
+  <div class="detail-header">
+    <a href="#toggle_switch/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">toggle_switch(assigns)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L409" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<h2 id="toggle_switch/1-attributes" class="section-heading">
+  <a href="#toggle_switch/1-attributes" class="hover-link">
+    <i class="ri-link-m" aria-hidden="true"></i>
+  </a>
+  <span class="text">Attributes</span>
+</h2>
+<ul><li><code class="inline">id</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">js_active_var</code> (<code class="inline">:string</code>) (required)</li><li><code class="inline">id_suffix</code> (<code class="inline">:string</code>) - Defaults to <code class="inline">&quot;&quot;</code>.</li><li><code class="inline">disabled</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">false</code>.</li><li>Global attributes are accepted.</li></ul>
+  </section>
+</section>
 <section class="detail" id="tooltip/1">
 
   <div class="detail-header">
@@ -1098,7 +1326,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">tooltip(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L438" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L501" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -1113,7 +1341,7 @@ Pages
   </a>
   <span class="text">Attributes</span>
 </h2>
-<ul><li><code class="inline">sticky?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">true</code>.</li></ul><h2 id="tooltip/1-slots" class="section-heading">
+<ul><li><code class="inline">sticky?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">true</code>.</li><li><code class="inline">enabled?</code> (<code class="inline">:boolean</code>) - Defaults to <code class="inline">true</code>.</li></ul><h2 id="tooltip/1-slots" class="section-heading">
   <a href="#tooltip/1-slots" class="hover-link">
     <i class="ri-link-m" aria-hidden="true"></i>
   </a>
@@ -1130,7 +1358,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">unstyled_link(assigns)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L325" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible_web/components/generic.ex#L338" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 

@@ -14,7 +14,7 @@
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-K7URE6B4.js"></script>
-    <script src="dist/sidebar_items-B3F792EA.js"></script>
+    <script src="dist/sidebar_items-1F7B6DE6.js"></script>
     <script src="docs_config.js"></script>
     <script async src="dist/html-PVRIOB7F.js"></script>
 
@@ -179,7 +179,15 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#create_api_key/3" data-no-tooltip translate="no">create_api_key(user, name, key)</a>
+        <a href="#create_sites_api_key/4" data-no-tooltip translate="no">create_sites_api_key(user, team, name, key)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#create_stats_api_key/4" data-no-tooltip translate="no">create_stats_api_key(user, team, name, key)</a>
 
       </div>
 
@@ -203,7 +211,7 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#find_api_key/1" data-no-tooltip translate="no">find_api_key(raw_key)</a>
+        <a href="#find_api_key/2" data-no-tooltip translate="no">find_api_key(raw_key, opts \\ [])</a>
 
       </div>
 
@@ -219,7 +227,7 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#get_user_by/1" data-no-tooltip translate="no">get_user_by(opts)</a>
+        <a href="#is_super_admin?/1" data-no-tooltip translate="no">is_super_admin?(user_id)</a>
 
       </div>
 
@@ -227,7 +235,23 @@ Pages
 
     <div class="summary-row">
       <div class="summary-signature">
-        <a href="#is_super_admin?/1" data-no-tooltip translate="no">is_super_admin?(user_id)</a>
+        <a href="#list_api_keys/2" data-no-tooltip translate="no">list_api_keys(user, team)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#log_failed_login_attempt/1" data-no-tooltip translate="no">log_failed_login_attempt(message)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#lookup/1" data-no-tooltip translate="no">lookup(email)</a>
 
       </div>
 
@@ -262,7 +286,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">rate_limit_type()</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L36" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L43" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -301,7 +325,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">check_password(user, password)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L64" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L94" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -320,15 +344,15 @@ Pages
 
   </section>
 </section>
-<section class="detail" id="create_api_key/3">
+<section class="detail" id="create_sites_api_key/4">
 
   <div class="detail-header">
-    <a href="#create_api_key/3" class="detail-link" data-no-tooltip aria-label="Link to this function">
+    <a href="#create_sites_api_key/4" class="detail-link" data-no-tooltip aria-label="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
     </a>
-    <h1 class="signature" translate="no">create_api_key(user, name, key)</h1>
+    <h1 class="signature" translate="no">create_sites_api_key(user, team, name, key)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L109" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L222" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -339,9 +363,47 @@ Pages
 
       <div class="specs">
 
-          <pre translate="no"><span class="attribute">@spec</span> create_api_key(<a href="Plausible.Auth.User.html#t:t/0">Plausible.Auth.User.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+          <pre translate="no"><span class="attribute">@spec</span> create_sites_api_key(
+  <a href="Plausible.Auth.User.html#t:t/0">Plausible.Auth.User.t</a>(),
+  <a href="Plausible.Teams.Team.html#t:t/0">Plausible.Teams.Team.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) ::
   {:ok, <a href="Plausible.Auth.ApiKey.html#t:t/0">Plausible.Auth.ApiKey.t</a>()}
-  | {:error, <a href="https://hexdocs.pm/ecto/3.12.5/Ecto.Changeset.html#t:t/0">Ecto.Changeset.t</a>() | :upgrade_required}</pre>
+  | {:error, <a href="https://hexdocs.pm/ecto/3.13.2/Ecto.Changeset.html#t:t/0">Ecto.Changeset.t</a>() | :upgrade_required}</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="create_stats_api_key/4">
+
+  <div class="detail-header">
+    <a href="#create_stats_api_key/4" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">create_stats_api_key(user, team, name, key)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L211" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <div class="specs">
+
+          <pre translate="no"><span class="attribute">@spec</span> create_stats_api_key(
+  <a href="Plausible.Auth.User.html#t:t/0">Plausible.Auth.User.t</a>(),
+  <a href="Plausible.Teams.Team.html#t:t/0">Plausible.Teams.Team.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) ::
+  {:ok, <a href="Plausible.Auth.ApiKey.html#t:t/0">Plausible.Auth.ApiKey.t</a>()}
+  | {:error, <a href="https://hexdocs.pm/ecto/3.13.2/Ecto.Changeset.html#t:t/0">Ecto.Changeset.t</a>() | :upgrade_required}</pre>
 
       </div>
 
@@ -356,7 +418,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">delete_api_key(user, id)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L124" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L233" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -382,27 +444,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">delete_user(user)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L72" class="icon-action" rel="help" aria-label="View Source">
-       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
-<section class="detail" id="find_api_key/1">
-
-  <div class="detail-header">
-    <a href="#find_api_key/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
-      <i class="ri-link-m" aria-hidden="true"></i>
-    </a>
-    <h1 class="signature" translate="no">find_api_key(raw_key)</h1>
-
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L134" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L104" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -413,8 +455,39 @@ Pages
 
       <div class="specs">
 
-          <pre translate="no"><span class="attribute">@spec</span> find_api_key(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
-  {:ok, <a href="Plausible.Auth.ApiKey.html#t:t/0">Plausible.Auth.ApiKey.t</a>()} | {:error, :invalid_api_key}</pre>
+          <pre translate="no"><span class="attribute">@spec</span> delete_user(<a href="Plausible.Auth.User.html#t:t/0">Plausible.Auth.User.t</a>()) ::
+  {:ok, :deleted} | {:error, :is_only_team_owner | :active_subscription}</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="find_api_key/2">
+
+    <span id="find_api_key/1"></span>
+
+  <div class="detail-header">
+    <a href="#find_api_key/2" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">find_api_key(raw_key, opts \\ [])</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L245" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <div class="specs">
+
+          <pre translate="no"><span class="attribute">@spec</span> find_api_key(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) ::
+  {:ok,
+   %{api_key: <a href="Plausible.Auth.ApiKey.html#t:t/0">Plausible.Auth.ApiKey.t</a>(), team: <a href="Plausible.Teams.Team.html#t:t/0">Plausible.Teams.Team.t</a>() | nil}}
+  | {:error, :invalid_api_key | :missing_site_id}</pre>
 
       </div>
 
@@ -429,7 +502,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">find_user_by(opts)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L51" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L67" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -447,15 +520,35 @@ Pages
 
   </section>
 </section>
-<section class="detail" id="get_user_by/1">
+<section class="detail" id="is_super_admin?/1">
 
   <div class="detail-header">
-    <a href="#get_user_by/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+    <a href="#is_super_admin?/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
     </a>
-    <h1 class="signature" translate="no">get_user_by(opts)</h1>
+    <h1 class="signature" translate="no">is_super_admin?(user_id)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L56" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L176" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="list_api_keys/2">
+
+  <div class="detail-header">
+    <a href="#list_api_keys/2" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">list_api_keys(user, team)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L187" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -466,23 +559,24 @@ Pages
 
       <div class="specs">
 
-          <pre translate="no"><span class="attribute">@spec</span> get_user_by(<a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) ::
-  {:ok, <a href="Plausible.Auth.User.html#t:t/0">Plausible.Auth.User.t</a>()} | {:error, :user_not_found}</pre>
+          <pre translate="no"><span class="attribute">@spec</span> list_api_keys(<a href="Plausible.Auth.User.html#t:t/0">Plausible.Auth.User.t</a>(), <a href="Plausible.Teams.Team.html#t:t/0">Plausible.Teams.Team.t</a>() | nil) :: [
+  <a href="Plausible.Auth.ApiKey.html#t:t/0">Plausible.Auth.ApiKey.t</a>()
+]</pre>
 
       </div>
 
 
   </section>
 </section>
-<section class="detail" id="is_super_admin?/1">
+<section class="detail" id="log_failed_login_attempt/1">
 
   <div class="detail-header">
-    <a href="#is_super_admin?/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+    <a href="#log_failed_login_attempt/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
       <i class="ri-link-m" aria-hidden="true"></i>
     </a>
-    <h1 class="signature" translate="no">is_super_admin?(user_id)</h1>
+    <h1 class="signature" translate="no">log_failed_login_attempt(message)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L97" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L58" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
@@ -490,6 +584,38 @@ Pages
   </div>
 
   <section class="docstring">
+
+      <div class="specs">
+
+          <pre translate="no"><span class="attribute">@spec</span> log_failed_login_attempt(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: :ok</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="lookup/1">
+
+  <div class="detail-header">
+    <a href="#lookup/1" class="detail-link" data-no-tooltip aria-label="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+    </a>
+    <h1 class="signature" translate="no">lookup(email)</h1>
+
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L72" class="icon-action" rel="help" aria-label="View Source">
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <div class="specs">
+
+          <pre translate="no"><span class="attribute">@spec</span> lookup(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: {:ok, <a href="Plausible.Auth.User.html#t:t/0">Plausible.Auth.User.t</a>()} | {:error, :user_not_found}</pre>
+
+      </div>
 
 
   </section>
@@ -502,7 +628,7 @@ Pages
     </a>
     <h1 class="signature" translate="no">rate_limit(limit_type, key)</h1>
 
-      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L40" class="icon-action" rel="help" aria-label="View Source">
+      <a href="https://github.com/plausible/analytics/blob/main/lib/plausible/auth/auth.ex#L47" class="icon-action" rel="help" aria-label="View Source">
        <i class="ri-code-s-slash-line" aria-hidden="true"></i>
      </a>
 
